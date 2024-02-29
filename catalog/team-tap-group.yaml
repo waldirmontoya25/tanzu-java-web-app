@@ -8,12 +8,12 @@ spec:
   profile:
     email: wmontoya@vmware.com
   parent: tanzu-java-web-app
-  children: [wmontoya@vmware.com]
+  children: [wmontoya]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: wmontoya@vmware.com
+  name: wmontoya
 spec:
   profile:
     email: wmontoya@vmware.com
