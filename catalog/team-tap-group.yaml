@@ -1,20 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: tap
+  name: default/tap
   description: TAP
 spec:
   type: team
   profile:
-    email: wmontoya@vmware.com
+    email:
   parent: tanzu-java-web-app
-  children: [wmontoya]
+  children: [wmontoya@vmware.com]
 ---
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: wmontoya
-spec:
-  profile:
-    email: wmontoya@vmware.com
-  memberOf: [tap]
