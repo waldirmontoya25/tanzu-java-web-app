@@ -15,3 +15,14 @@ spec:
   type: service
   lifecycle: experimental
   owner: tap
+
+  
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: tap
+  description: Tanzu Application Platform
+spec:
+  type: department
+  children: [wmontoya@vmware.com]
