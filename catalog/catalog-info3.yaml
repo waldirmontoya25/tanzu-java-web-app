@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tanzu-java-web-app
+  description: Tanzu Java Web App
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
+spec:
+  type: library
+  lifecycle: experimental
+  owner: tap
+
+  
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: tap
+  description: Tanzu Application Platform
+spec:
+  type: department
+  children: [wmontoya@vmware.com]
